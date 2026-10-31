@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: t3code
+  title: T3 Code
+  description: >-
+    T3 Code agent-harness control surface (mobile, web, Electron) vendored into the org.
+    Verified 2026-11-01: not deployed on c0r3 or pi5c0, no fleet integration referenced.
+  annotations:
+    github.com/project-slug: bwcloud-dev/t3code
+    backstage.io/source-location: url:https://github.com/bwcloud-dev/t3code/tree/main/
+    backstage.io/view-url: https://github.com/bwcloud-dev/t3code
+    backstage.io/edit-url: https://github.com/bwcloud-dev/t3code/edit/main/catalog-info.yaml
+    bwcloud.dev/last-commit: "2026-10-29"
+  links:
+    - url: https://github.com/bwcloud-dev/t3code
+      title: Repository
+    - url: https://github.com/bwcloud-dev/t3code/actions
+      title: CI runs
+  tags: [agent-harness, electron, vendored]
+spec:
+  type: library
+  lifecycle: experimental
+  owner: group:default/bwcloud-infra
